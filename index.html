@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para a Melhor Mãe do Mundo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff9f9;
+            overflow-x: hidden;
+        }
+        
+        .dancing-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .heart {
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .photo-frame {
+            border: 15px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: rotate(-3deg);
+            transition: all 0.3s ease;
+        }
+        
+        .photo-frame:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .message-box {
+            background: linear-gradient(135deg, #ffd6e7 0%, #ffffff 100%);
+            border-left: 5px solid #ff6b9d;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Céu com corações -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+        <div class="absolute heart text-pink-300 text-2xl opacity-70" style="top: 10%; left: 15%;">❤</div>
+        <div class="absolute heart text-pink-400 text-3xl opacity-80" style="top: 25%; left: 70%; animation-delay: 0.5s;">❤</div>
+        <div class="absolute heart text-pink-500 text-xl opacity-60" style="top: 40%; left: 30%; animation-delay: 0.8s;">❤</div>
+        <div class="absolute heart text-pink-300 text-4xl opacity-90" style="top: 60%; left: 80%; animation-delay: 0.3s;">❤</div>
+        <div class="absolute heart text-pink-400 text-2xl opacity-70" style="top: 75%; left: 20%; animation-delay: 0.7s;">❤</div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4 py-12">
+        <!-- Cabeçalho -->
+        <header class="text-center mb-16">
+            <h1 class="dancing-font text-5xl md:text-7xl font-bold text-pink-600 mb-4">Para a Minha Mãe</h1>
+            <div class="flex justify-center items-center">
+                <div class="heart text-red-500 text-6xl">❤</div>
+                <p class="dancing-font text-2xl md:text-3xl text-gray-700 mx-4">O Amor Mais Puro do Mundo</p>
+                <div class="heart text-red-500 text-6xl">❤</div>
+            </div>
+        </header>
+
+        <!-- Seção de foto -->
+        <section class="flex flex-col md:flex-row items-center justify-center mb-20">
+            <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+                <!-- Substitua pela foto da sua mãe -->
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+                    <div class="photo-frame bg-white p-2 rounded-lg w-64 h-64 overflow-hidden">
+                        <img src="mamae.jpg" 
+                             alt="mamae" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 px-4 md:px-8">
+                <h2 class="dancing-font text-4xl text-pink-500 mb-6">Mae Fenix.</h2>
+                <p class="text-lg text-gray-700 mb-4">Desde o primeiro momento em que abriu os olhos para mim, você me ensinou o verdadeiro significado do amor incondicional.</p>
+                <p class="text-lg text-gray-700 mb-4">Seu sorriso é meu sol, seu abraço é meu porto seguro, e seu amor é a força que me move todos os dias.</p>
+                <p class="text-lg text-gray-700">Hoje e sempre, quero que saiba o quanto você é especial para mim.</p>
+            </div>
+        </section>
+
+        <!-- Razões por que eu te amo -->
+        <section class="mb-20">
+            <h2 class="dancing-font text-4xl text-center text-pink-500 mb-12">Razões Pelas Quais Eu Te Amo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="message-box p-6 rounded-lg">
+                    <div class="flex items-center mb-3">
+                        <div class="heart text-red-500 text-2xl mr-3">❤</div>
+                        <h3 class="text-xl font-semibold text-pink-600">Seu Amor Incondicional</h3>
+                    </div>
+                    <p class="text-gray-700">Não importa o que aconteça, você sempre me ama sem reservas. Esse amor me dá forças para enfrentar qualquer desafio.</p>
+                </div>
+                
+                <div class="message-box p-6 rounded-lg">
+                    <div class="flex items-center mb-3">
+                        <div class="heart text-red-500 text-2xl mr-3">❤</div>
+                        <h3 class="text-xl font-semibold text-pink-600">Seus Sacrifícios</h3>
+                    </div>
+                    <p class="text-gray-700">Tudo o que você já deixou de lado por mim não passa despercebido. Cada vez que a senhora ficou sem comer por mim, foi um tijolo para a estrada da minha vida</p>
+                </div>
+                
+                <div class="message-box p-6 rounded-lg">
+                    <div class="flex items-center mb-3">
+                        <div class="heart text-red-500 text-2xl mr-3">❤</div>
+                        <h3 class="text-xl font-semibold text-pink-600">Seu Sorriso</h3>
+                    </div>
+                    <p class="text-gray-700">O mundo fica mais bonito quando você sorri. É como se tudo fizesse sentido quando vejo a felicidade no seu rosto.</p>
+                </div>
+                
+                <div class="message-box p-6 rounded-lg">
+                    <div class="flex items-center mb-3">
+                        <div class="heart text-red-500 text-2xl mr-3">❤</div>
+                        <h3 class="text-xl font-semibold text-pink-600">Seus Conselhos</h3>
+                    </div>
+                    <p class="text-gray-700">Ninguém me conhece como você. Seus conselhos sempre acertam em cheio, mesmo quando eu não quero ouvir.</p>
+                </div>
+                
+                <div class="message-box p-6 rounded-lg">
+                    <div class="flex items-center mb-3">
+                        <div class="heart text-red-500 text-2xl mr-3">❤</div>
+                        <h3 class="text-xl font-semibold text-pink-600">Seu Abraco</h3>
+                    </div>
+                    <p class="text-gray-700">Aquele abraco que raramente peco, mas que amo muito</p>
+                </div>
+                
+                <div class="message-box p-6 rounded-lg">
+                    <div class="flex items-center mb-3">
+                        <div class="heart text-red-500 text-2xl mr-3">❤</div>
+                        <h3 class="text-xl font-semibold text-pink-600">Seu Coração Gigante</h3>
+                    </div>
+                    <p class="text-gray-700">Você tem uma capacidade infinita de amar A mim, a Bielle, a Susu, Bolinho e Miguel. Você é amor em forma de pessoa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de memórias -->
+        <section class="mb-20">
+            <h2 class="dancing-font text-4xl text-center text-pink-500 mb-12">Nossas Melhores Memórias...A, nao temos foto verdade</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Substitua por fotos reais -->
+                <div class="bg-pink-100 rounded-lg overflow-hidden h-40 flex items-center justify-center">
+                    <i class="fas fa-camera-retro text-4xl text-pink-400"></i>
+                </div>
+                <div class="bg-purple-100 rounded-lg overflow-hidden h-40 flex items-center justify-center">
+                    <i class="fas fa-birthday-cake text-4xl text-purple-400"></i>
+                </div>
+                <div class="bg-blue-100 rounded-lg overflow-hidden h-40 flex items-center justify-center">
+                    <i class="fas fa-umbrella-beach text-4xl text-blue-400"></i>
+                </div>
+                <div class="bg-yellow-100 rounded-lg overflow-hidden h-40 flex items-center justify-center">
+                    <i class="fas fa-hands-helping text-4xl text-yellow-500"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jogo interativo -->
+        <section class="mb-20 bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
+            <h2 class="dancing-font text-4xl text-center text-pink-500 mb-8">Quanto Eu Te Amo?</h2>
+            <p class="text-center text-gray-700 mb-6">Clique no coração para descobrir!</p>
+            <div class="flex justify-center">
+                <button id="loveButton" class="heart text-red-500 text-8xl cursor-pointer hover:scale-110 transition-transform">❤</button>
+            </div>
+            <p id="loveMessage" class="text-center text-xl text-pink-600 mt-6 font-semibold hidden">Eu te amo mais que tudo no mundo!</p>
+        </section>
+
+        <!-- Mensagem final -->
+        <section class="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 md:p-12 text-center">
+            <h2 class="dancing-font text-4xl md:text-5xl text-pink-600 mb-6">Mãe, Você é Meu Tudo, Meu Abismo e meu topo.</h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-6">Nenhuma palavra é capaz de expressar completamente o amor que sinto por você.</p>
+            <p class="text-lg md:text-xl text-gray-700 mb-8">Mas espero que este pequeno gesto mostre um pouquinho do que você significa para mim.</p>
+            <div class="flex justify-center">
+                <div class="flex flex-col items-center">
+                    <div class="heart floating text-red-500 text-6xl mb-4">❤</div>
+                    <p class="dancing-font text-2xl text-pink-500">Te amo hoje, amanhã e para sempre!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="mt-20 text-center text-gray-600">
+            <p>Feito com todo o amor do mundo por você, mãe.</p>
+            <p class="mt-2">© <span id="year"></span> - Seu filho(YUKIZINHO OU ANDREY) que te ama muito....Sempre continue renascendo, Como uma Fenix</p>
+        </footer>
+    </div>
+
+    <script>
+        // Atualiza o ano no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Jogo interativo
+        const loveButton = document.getElementById('loveButton');
+        const loveMessage = document.getElementById('loveMessage');
+        
+        loveButton.addEventListener('click', function() {
+            loveMessage.classList.remove('hidden');
+            
+            // Mensagens aleatórias
+            const messages = [
+                "Eu te amo mais que todas as estrelas do céu!",
+                "Meu amor por você é maior que o universo!",
+                "Você é a melhor mãe que eu poderia ter!",
+                "Te amo mais que palavras podem dizer!",
+                "Nada se compara ao amor que sinto por você!",
+                "Você é meu porto seguro e meu maior amor!"
+            ];
+            
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            loveMessage.textContent = randomMessage;
+            
+            // Efeito visual
+            this.classList.add('animate-ping');
+            setTimeout(() => {
+                this.classList.remove('animate-ping');
+            }, 500);
+        });
+        
+        // Efeito de digitação na mensagem principal
+        const messages = [
+            "O Amor Mais Puro do Mundo",
+            "Minha Heroína",
+            "Meu Porto Seguro",
+            "Minha Melhor Amiga",
+            "Meu Maior Amor"
+        ];
+        
+        let currentMessage = 0;
+        const changingText = document.querySelector('.dancing-font.text-2xl.md\\:text-3xl');
+        
+        function changeMessage() {
+            currentMessage = (currentMessage + 1) % messages.length;
+            changingText.textContent = messages[currentMessage];
+        }
+        
+        setInterval(changeMessage, 3000);
+    </script>
+</body>
+</html>
